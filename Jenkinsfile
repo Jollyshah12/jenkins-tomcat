@@ -18,7 +18,7 @@ pipeline {
         stage('DEPLOY TO PROD') {
     steps {
         bat '''
-        echo D | xcopy index.html C:\\apache-tomcat-11.0.18\\webapps\\ROOT /E /I /Y
+         xcopy index.html C:\\apache-tomcat-11.0.18-windows-x64\\apache-tomcat-11.0.18\\webapps\\ROOT /E /I /Y
         '''
     }
 }
